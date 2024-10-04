@@ -1,0 +1,8 @@
+
+Single_addr_operation = Operation (addr | register) end_of_line
+Double_addr_operation = Operation (addr | register) comma (addr | number | register) end_of_line
+Jmp_save = Label colon end_of_line
+Jmp Operation = Jump (number | label)  
+
+
+Addr = bracket_open number(0-29) bracket_close
